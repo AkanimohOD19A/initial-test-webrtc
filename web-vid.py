@@ -23,7 +23,7 @@ with col1:
 with col2:
     ctx = webrtc_streamer(key="example", video_transformer_factory=VideoTransformer)
     if ctx.video_transformer:
-        ctx.video_transformer.threshold1 = st.slider("Threshold1", 0, 1000, 100)
-        ctx.video_transformer.threshold2 = st.slider("Threshold2", 0, 1000, 100)
+        ctx.video_transformer.threshold1 = st.sidebar.slider("Threshold1", 0, 1000, 100)
+        ctx.video_transformer.threshold2 = st.sidebar.slider("Threshold2", 0, 1000, 100)
 
 # print(transformer_widget_1, transformer_widget_2)
